@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phishing web detector</title>
+<link rel="stylesheet" href="styleforPW.css">
+</head>
+<body>
+<main>
+<h1>PHISHING WEB DETECTOR</h1>
+<p class="sub">Paste a link to check it against live phishing blocklists and common phishing signs. The page behind the link is never opened.</p>
+<div class="row">
+<input id="url" type="text" placeholder="https://example.com/login" autocomplete="off" spellcheck="false" aria-label="URL to check">
+<button id="go" type="button">Check</button>
+</div>
+<div id="out" aria-live="polite"></div>
+<p class="note">Blocklists only know about phishing pages that were already reported, and the link analysis can’t see the page itself, so a clean result isn’t a guarantee. When in doubt, type the site’s address yourself.</p>
+</main>
+<script src="interactivePW.js"></script>
+</body>
+</html>
